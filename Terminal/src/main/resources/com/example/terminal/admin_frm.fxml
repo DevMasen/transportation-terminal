@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.terminal.AdminFrmController">
+   <children>
+      <Label alignment="CENTER" layoutY="40.0" prefHeight="80.0" prefWidth="600.0" text="Admin FRM System" textFill="#666666">
+         <font>
+            <Font name="Calibri" size="60.0" />
+         </font>
+      </Label>
+      <Text layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Option :" textAlignment="CENTER" wrappingWidth="600.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <RadioButton contentDisplay="CENTER" layoutX="14.0" layoutY="164.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="190.0" selected="true" text="Financial Report">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="frm" />
+         </toggleGroup>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </RadioButton>
+      <Button layoutX="230.0" layoutY="214.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: #ccc;" text="Done">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <RadioButton contentDisplay="CENTER" layoutX="205.0" layoutY="164.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="190.0" text="Daily Income" toggleGroup="$frm">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </RadioButton>
+      <RadioButton contentDisplay="CENTER" layoutX="396.0" layoutY="164.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="190.0" text="Monthly Income" toggleGroup="$frm">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </RadioButton>
+      <Button layoutX="14.0" layoutY="536.0" mnemonicParsing="false" onAction="#switchToAdminPanel" prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #ccc;" text="Back">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ListView layoutX="50.0" layoutY="280.0" prefHeight="240.0" prefWidth="500.0" />
+   </children>
+</AnchorPane>

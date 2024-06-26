@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.terminal.AdminPanelController">
+   <children>
+      <Label alignment="CENTER" layoutY="50.0" prefHeight="80.0" prefWidth="600.0" text="Admin Panel" textFill="#666666">
+         <font>
+            <Font name="Calibri" size="60.0" />
+         </font>
+      </Label>
+      <Text layoutX="187.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose the Operation :" wrappingWidth="210.6666259765625">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="reserveCancelTicket" layoutX="187.0" layoutY="224.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" selected="true" text="Reserve/Cancel Ticket">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="admin" />
+         </toggleGroup>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </RadioButton>
+      <Button layoutX="230.0" layoutY="486.0" mnemonicParsing="false" onAction="#selectAction" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: #ccc;" text="Select">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="14.0" layoutY="536.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #ccc;" text="Back">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <RadioButton fx:id="vehicleManage" layoutX="187.0" layoutY="325.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" text="Vehicle Manage" toggleGroup="$admin">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </RadioButton>
+      <RadioButton fx:id="setDelay" layoutX="187.0" layoutY="375.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" text="Set Delay" toggleGroup="$admin">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </RadioButton>
+      <RadioButton fx:id="frmSystem" layoutX="187.0" layoutY="425.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" text="FRM System" toggleGroup="$admin">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </RadioButton>
+      <RadioButton fx:id="manageTickets" layoutX="187.0" layoutY="275.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" text="Add/Remove Ticket" toggleGroup="$admin">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </RadioButton>
+   </children>
+</AnchorPane>

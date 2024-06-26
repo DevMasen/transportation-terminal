@@ -1,0 +1,2 @@
+ticket1 14:00 2024-06-23 30 car1 Car WashingtonDC LosAngles 100
+ticket2 16:00 2024-06-23 0 bus1 Bus Brookline Texas 100
